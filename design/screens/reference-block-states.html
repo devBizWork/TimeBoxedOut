@@ -2,12 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Block states and signals</title>
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#F5F2FA}
@@ -15,7 +11,8 @@ a{color:#4B2E83;text-decoration:none}a:hover{color:#35206A}
 button,input,textarea{font-family:inherit}
 button{cursor:pointer}
 </style>
-</helmet>
+</head>
+<body>
 <div style="width: 1000px; height: 1000px; box-sizing: border-box; padding: 56px; background: #F5F2FA; color: #15111F; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; display: flex; flex-direction: column; gap: 0">
 
 <h1 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-size: 42px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1">Block states &amp; signals</h1>
@@ -107,13 +104,5 @@ button{cursor:pointer}
 
 </div>
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1000,"height":1000}}'>
-class Component extends DCLogic {
-  renderVals() {
-    return {};
-  }
-}
-</script>
 </body>
 </html>

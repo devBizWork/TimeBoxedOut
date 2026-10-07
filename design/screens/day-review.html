@@ -2,12 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Day review, Monday October 5</title>
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#F5F2FA}
@@ -15,11 +11,12 @@ a{color:#4B2E83;text-decoration:none}a:hover{color:#35206A}
 button,input,textarea{font-family:inherit}
 button{cursor:pointer}
 </style>
-</helmet>
+</head>
+<body>
 <div style="width: 390px; height: 1240px; position: relative; overflow: hidden; background: #F5F2FA; color: #15111F; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; display: flex; flex-direction: column">
 
 <div style="padding: 48px 12px 0 8px; display: flex; align-items: center">
-<a href="Calendar.dc.html" style="height: 44px; padding: 0 12px 0 4px; display: flex; align-items: center; gap: 2px; color: #4B2E83; font-size: 15px; font-weight: 700"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"></path></svg>Calendar</a>
+<a href="calendar.html" style="height: 44px; padding: 0 12px 0 4px; display: flex; align-items: center; gap: 2px; color: #4B2E83; font-size: 15px; font-weight: 700"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"></path></svg>Calendar</a>
 </div>
 <div style="padding: 4px 20px 0 20px; display: flex; flex-direction: column; gap: 2px">
 <p style="margin: 0; font-size: 14px; font-weight: 600; color: #5E5670">Monday, October 5</p>
@@ -95,23 +92,15 @@ button{cursor:pointer}
 </div>
 </section>
 
-<a href="ReviewFlow.dc.html" style="margin: 16px 16px 0 16px; height: 54px; border-radius: 27px; background: #4B2E83; color: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; font-weight: 700">Log remaining tasks<span style="min-width: 24px; height: 24px; border-radius: 12px; background: #E2DBFB; color: #4B2E83; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center">1</span></a>
+<a href="state-review-today.html" style="margin: 16px 16px 0 16px; height: 54px; border-radius: 27px; background: #4B2E83; color: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; font-weight: 700">Log remaining tasks<span style="min-width: 24px; height: 24px; border-radius: 12px; background: #E2DBFB; color: #4B2E83; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center">1</span></a>
 
 <nav aria-label="Main" style="position: absolute; left: 0; right: 0; bottom: 0; height: 84px; box-sizing: border-box; padding: 6px 12px 30px 12px; background: #FFFFFF; border-top: 1px solid #E6E0F0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px">
-<a href="Main.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #5E5670; font-size: 11px; font-weight: 600"><span style="width: 52px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></span>Today</a>
-<a href="Calendar.dc.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #4B2E83; font-size: 11px; font-weight: 700"><span style="width: 52px; height: 28px; border-radius: 14px; background: #E2DBFB; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span>Calendar</a>
-<a href="Tasks.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #5E5670; font-size: 11px; font-weight: 600"><span style="width: 52px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 6h9M11 12h9M11 18h9"></path><path d="M4 6l1.5 1.5L8 5"></path><path d="M4 12l1.5 1.5L8 11"></path><path d="M4 18l1.5 1.5L8 17"></path></svg></span>Tasks</a>
-<a href="Settings.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #5E5670; font-size: 11px; font-weight: 600"><span style="width: 52px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"></path><circle cx="15" cy="7" r="2"></circle><circle cx="9" cy="17" r="2"></circle></svg></span>Settings</a>
+<a href="today.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #5E5670; font-size: 11px; font-weight: 600"><span style="width: 52px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></span>Today</a>
+<a href="calendar.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #4B2E83; font-size: 11px; font-weight: 700"><span style="width: 52px; height: 28px; border-radius: 14px; background: #E2DBFB; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span>Calendar</a>
+<a href="tasks.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #5E5670; font-size: 11px; font-weight: 600"><span style="width: 52px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 6h9M11 12h9M11 18h9"></path><path d="M4 6l1.5 1.5L8 5"></path><path d="M4 12l1.5 1.5L8 11"></path><path d="M4 18l1.5 1.5L8 17"></path></svg></span>Tasks</a>
+<a href="settings.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #5E5670; font-size: 11px; font-weight: 600"><span style="width: 52px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"></path><circle cx="15" cy="7" r="2"></circle><circle cx="9" cy="17" r="2"></circle></svg></span>Settings</a>
 </nav>
 
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1240}}'>
-class Component extends DCLogic {
-  renderVals() {
-    return {};
-  }
-}
-</script>
 </body>
 </html>
