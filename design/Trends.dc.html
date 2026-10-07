@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trends</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F2FA}
+a{color:#4B2E83;text-decoration:none}a:hover{color:#35206A}
+button,input,textarea{font-family:inherit}
+button{cursor:pointer}
+</style>
+</helmet>
+<div style="width: 390px; height: 1240px; position: relative; overflow: hidden; background: #F5F2FA; color: #15111F; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; display: flex; flex-direction: column">
+
+<div style="padding: 48px 12px 0 8px; display: flex; align-items: center">
+<a href="Calendar.dc.html" style="height: 44px; padding: 0 12px 0 4px; display: flex; align-items: center; gap: 2px; color: #4B2E83; font-size: 15px; font-weight: 700"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"></path></svg>Calendar</a>
+</div>
+<h1 style="margin: 4px 20px 0 20px; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-size: 34px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1">Trends</h1>
+
+<div role="group" aria-label="Period" style="margin: 14px 16px 0 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; padding: 3px; border-radius: 16px; background: #ECE8F4">
+<button type="button" aria-pressed="true" style="height: 38px; border: 0; border-radius: 13px; background: #4B2E83; color: #FFFFFF; font-size: 14px; font-weight: 700; padding: 0">Weekly</button>
+<button type="button" aria-pressed="false" style="height: 38px; border: 0; border-radius: 13px; background: transparent; color: #15111F; font-size: 14px; font-weight: 600; padding: 0">Monthly</button>
+</div>
+
+<div style="margin: 8px 12px 0 20px; display: flex; align-items: center; justify-content: space-between">
+<h2 style="margin: 0; font-size: 16px; font-weight: 700">Sep 30 – Oct 6</h2>
+<div style="display: flex; gap: 2px">
+<button type="button" aria-label="Previous week" style="width: 44px; height: 44px; border-radius: 22px; border: 0; background: transparent; color: #15111F; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"></path></svg></button>
+<button type="button" aria-label="Next week" disabled="disabled" style="width: 44px; height: 44px; border-radius: 22px; border: 0; background: transparent; color: #B8B0C8; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 6l6 6-6 6"></path></svg></button>
+</div>
+</div>
+
+<div style="margin: 6px 16px 0 16px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div style="padding: 12px 14px; border-radius: 18px; background: #4B2E83; color: #FFFFFF; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 11.5px; font-weight: 700; color: #E2DBFB">Day score</span>
+<span style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-size: 28px; font-weight: 700; line-height: 1.15">61%</span>
+<span style="font-size: 11.5px; font-weight: 600; color: #E2DBFB">avg followed</span>
+</div>
+<div style="padding: 12px 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E6E0F0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 11.5px; font-weight: 700; color: #5E5670">Logged score</span>
+<span style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-size: 28px; font-weight: 700; line-height: 1.15">81%</span>
+<span style="font-size: 11.5px; font-weight: 600; color: #5E5670">avg</span>
+</div>
+<div style="padding: 12px 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E6E0F0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 11.5px; font-weight: 700; color: #5E5670">Coverage</span>
+<span style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-size: 28px; font-weight: 700; line-height: 1.15">75%</span>
+<span style="font-size: 11.5px; font-weight: 600; color: #5E5670">of plan logged</span>
+</div>
+</div>
+
+<section aria-labelledby="scores-h" style="margin: 12px 16px 0 16px; padding: 16px 16px 14px 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E6E0F0; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+<h2 id="scores-h" style="margin: 0; font-size: 15px; font-weight: 700">Scores by day</h2>
+<span style="display: flex; gap: 12px; font-size: 11.5px; font-weight: 600; color: #5E5670"><span style="display: flex; align-items: center; gap: 5px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #9C8CF5"></span>Logged</span><span style="display: flex; align-items: center; gap: 5px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #4B2E83"></span>Day</span></span>
+</div>
+<div style="display: flex; gap: 6px">
+<div aria-hidden="true" style="position: relative; width: 30px; height: 140px; font-size: 10.5px; font-weight: 600; color: #5E5670; text-align: right">
+<span style="position: absolute; right: 0; top: -7px">100</span>
+<span style="position: absolute; right: 0; top: 63px">50</span>
+<span style="position: absolute; right: 0; top: 133px">0</span>
+</div>
+<div style="flex: 1; position: relative; height: 140px">
+<span aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; height: 1px; background: #ECE8F4"></span>
+<span aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 70px; height: 1px; background: #ECE8F4"></span>
+<span aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: #D6CEE6"></span>
+<div style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr))">
+<div title="Wed Sep 30: Logged 83%, Day 68%" style="display: flex; align-items: flex-end; justify-content: center; gap: 3px"><span style="width: 12px; height: 116px; border-radius: 6px 6px 2px 2px; background: #9C8CF5"></span><span style="width: 12px; height: 95px; border-radius: 6px 6px 2px 2px; background: #4B2E83"></span></div>
+<div title="Thu Oct 1: Logged 80%, Day 74%" style="display: flex; align-items: flex-end; justify-content: center; gap: 3px"><span style="width: 12px; height: 112px; border-radius: 6px 6px 2px 2px; background: #9C8CF5"></span><span style="width: 12px; height: 104px; border-radius: 6px 6px 2px 2px; background: #4B2E83"></span></div>
+<div title="Fri Oct 2: Logged 76%, Day 52%" style="display: flex; align-items: flex-end; justify-content: center; gap: 3px"><span style="width: 12px; height: 106px; border-radius: 6px 6px 2px 2px; background: #9C8CF5"></span><span style="width: 12px; height: 73px; border-radius: 6px 6px 2px 2px; background: #4B2E83"></span></div>
+<div title="Sat Oct 3: Logged 71%, Day 40%" style="display: flex; align-items: flex-end; justify-content: center; gap: 3px"><span style="width: 12px; height: 99px; border-radius: 6px 6px 2px 2px; background: #9C8CF5"></span><span style="width: 12px; height: 56px; border-radius: 6px 6px 2px 2px; background: #4B2E83"></span></div>
+<div title="Sun Oct 4: Logged 83%, Day 58%" style="display: flex; align-items: flex-end; justify-content: center; gap: 3px"><span style="width: 12px; height: 116px; border-radius: 6px 6px 2px 2px; background: #9C8CF5"></span><span style="width: 12px; height: 81px; border-radius: 6px 6px 2px 2px; background: #4B2E83"></span></div>
+<div title="Mon Oct 5: Logged 75%, Day 60%" style="display: flex; align-items: flex-end; justify-content: center; gap: 3px"><span style="width: 12px; height: 105px; border-radius: 6px 6px 2px 2px; background: #9C8CF5"></span><span style="width: 12px; height: 84px; border-radius: 6px 6px 2px 2px; background: #4B2E83"></span></div>
+<div title="Tue Oct 6, so far: Logged 96%, Day 72%" style="display: flex; align-items: flex-end; justify-content: center; gap: 3px"><span style="width: 12px; height: 134px; box-sizing: border-box; border-radius: 6px 6px 2px 2px; border: 1.5px dashed #7A63E8; background: #E0DAFD"></span><span style="width: 12px; height: 101px; box-sizing: border-box; border-radius: 6px 6px 2px 2px; border: 1.5px dashed #4B2E83; background: #9F8FD0"></span></div>
+</div>
+</div>
+</div>
+<div style="margin-left: 36px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); text-align: center; font-size: 11px; font-weight: 600; color: #5E5670; line-height: 1.35">
+<span>W<br>30</span><span>T<br>1</span><span>F<br>2</span><span>S<br>3</span><span>S<br>4</span><span>M<br>5</span><span style="color: #4B2E83; font-weight: 800">Today<br>so far</span>
+</div>
+</section>
+
+<section aria-labelledby="cov-h" style="margin: 12px 16px 0 16px; padding: 16px 16px 14px 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E6E0F0; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h2 id="cov-h" style="margin: 0; font-size: 15px; font-weight: 700">Logging coverage</h2>
+<span style="font-size: 12.5px; font-weight: 500; color: #5E5670">Share of planned minutes you logged</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; align-items: end">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="font-size: 11.5px; font-weight: 800">82</span><span aria-hidden="true" style="width: 100%; height: 90px; border-radius: 10px; background: repeating-linear-gradient(135deg, #D6CEE6 0 4px, #F7F4FB 4px 8px); display: flex; align-items: flex-end; overflow: hidden"><span style="width: 100%; height: 82%; border-radius: 10px; background: #3D3550"></span></span><span style="font-size: 11px; font-weight: 700; color: #5E5670">W</span></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="font-size: 11.5px; font-weight: 800">92</span><span aria-hidden="true" style="width: 100%; height: 90px; border-radius: 10px; background: repeating-linear-gradient(135deg, #D6CEE6 0 4px, #F7F4FB 4px 8px); display: flex; align-items: flex-end; overflow: hidden"><span style="width: 100%; height: 92%; border-radius: 10px; background: #3D3550"></span></span><span style="font-size: 11px; font-weight: 700; color: #5E5670">T</span></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="font-size: 11.5px; font-weight: 800">68</span><span aria-hidden="true" style="width: 100%; height: 90px; border-radius: 10px; background: repeating-linear-gradient(135deg, #D6CEE6 0 4px, #F7F4FB 4px 8px); display: flex; align-items: flex-end; overflow: hidden"><span style="width: 100%; height: 68%; border-radius: 10px; background: #3D3550"></span></span><span style="font-size: 11px; font-weight: 700; color: #5E5670">F</span></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="font-size: 11.5px; font-weight: 800">56</span><span aria-hidden="true" style="width: 100%; height: 90px; border-radius: 10px; background: repeating-linear-gradient(135deg, #D6CEE6 0 4px, #F7F4FB 4px 8px); display: flex; align-items: flex-end; overflow: hidden"><span style="width: 100%; height: 56%; border-radius: 10px; background: #3D3550"></span></span><span style="font-size: 11px; font-weight: 700; color: #5E5670">S</span></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="font-size: 11.5px; font-weight: 800">70</span><span aria-hidden="true" style="width: 100%; height: 90px; border-radius: 10px; background: repeating-linear-gradient(135deg, #D6CEE6 0 4px, #F7F4FB 4px 8px); display: flex; align-items: flex-end; overflow: hidden"><span style="width: 100%; height: 70%; border-radius: 10px; background: #3D3550"></span></span><span style="font-size: 11px; font-weight: 700; color: #5E5670">S</span></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="font-size: 11.5px; font-weight: 800">80</span><span aria-hidden="true" style="width: 100%; height: 90px; border-radius: 10px; background: repeating-linear-gradient(135deg, #D6CEE6 0 4px, #F7F4FB 4px 8px); display: flex; align-items: flex-end; overflow: hidden"><span style="width: 100%; height: 80%; border-radius: 10px; background: #3D3550"></span></span><span style="font-size: 11px; font-weight: 700; color: #5E5670">M</span></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="font-size: 11.5px; font-weight: 800; color: #4B2E83">75</span><span aria-hidden="true" style="width: 100%; height: 90px; border-radius: 10px; background: repeating-linear-gradient(135deg, #D6CEE6 0 4px, #F7F4FB 4px 8px); display: flex; align-items: flex-end; overflow: hidden"><span style="width: 100%; height: 75%; border-radius: 10px; background: #4B2E83"></span></span><span style="font-size: 11px; font-weight: 800; color: #4B2E83">T</span></div>
+</div>
+</section>
+
+<section aria-labelledby="skip-h" style="margin: 12px 16px 0 16px; padding: 16px 16px 6px 16px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E6E0F0; display: flex; flex-direction: column; gap: 4px">
+<h2 id="skip-h" style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700">Most skipped</h2>
+<div style="padding: 10px 0; display: flex; flex-direction: column; gap: 7px">
+<div style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 5px; background: #7FCFA8"></span><span style="flex: 1; font-size: 14.5px; font-weight: 700">Lunch walk</span><span style="font-size: 12.5px; font-weight: 600; color: #5E5670">Skipped <span style="color: #9A4317; font-weight: 800">3 of 7</span> days</span></div>
+<div aria-hidden="true" style="height: 6px; border-radius: 3px; background: #ECE8F4; display: flex; overflow: hidden"><span style="width: 43%; background: #F08A5D"></span></div>
+</div>
+<div style="padding: 10px 0; display: flex; flex-direction: column; gap: 7px; border-top: 1px solid #EFEBF6">
+<div style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 5px; background: #F2A98A"></span><span style="flex: 1; font-size: 14.5px; font-weight: 700">Evening reading</span><span style="font-size: 12.5px; font-weight: 600; color: #5E5670">Skipped <span style="color: #9A4317; font-weight: 800">1</span> · unknown 3</span></div>
+<div aria-hidden="true" style="height: 6px; border-radius: 3px; background: #ECE8F4; display: flex; gap: 2px; overflow: hidden"><span style="width: 14%; background: #F08A5D"></span><span style="width: 43%; background: repeating-linear-gradient(135deg, #CFC6E0 0 3px, #F7F4FB 3px 6px)"></span></div>
+</div>
+<div style="padding: 10px 0; display: flex; flex-direction: column; gap: 7px; border-top: 1px solid #EFEBF6">
+<div style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 5px; background: #8DB8E6"></span><span style="flex: 1; font-size: 14.5px; font-weight: 700">Plan the day</span><span style="font-size: 12.5px; font-weight: 600; color: #5E5670">Skipped <span style="color: #9A4317; font-weight: 800">1 of 5</span> days</span></div>
+<div aria-hidden="true" style="height: 6px; border-radius: 3px; background: #ECE8F4; display: flex; overflow: hidden"><span style="width: 20%; background: #F08A5D"></span></div>
+</div>
+</section>
+
+<nav aria-label="Main" style="position: absolute; left: 0; right: 0; bottom: 0; height: 84px; box-sizing: border-box; padding: 6px 12px 30px 12px; background: #FFFFFF; border-top: 1px solid #E6E0F0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px">
+<a href="Main.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #5E5670; font-size: 11px; font-weight: 600"><span style="width: 52px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></span>Today</a>
+<a href="Calendar.dc.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #4B2E83; font-size: 11px; font-weight: 700"><span style="width: 52px; height: 28px; border-radius: 14px; background: #E2DBFB; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg></span>Calendar</a>
+<a href="Tasks.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #5E5670; font-size: 11px; font-weight: 600"><span style="width: 52px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 6h9M11 12h9M11 18h9"></path><path d="M4 6l1.5 1.5L8 5"></path><path d="M4 12l1.5 1.5L8 11"></path><path d="M4 18l1.5 1.5L8 17"></path></svg></span>Tasks</a>
+<a href="Settings.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; color: #5E5670; font-size: 11px; font-weight: 600"><span style="width: 52px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"></path><circle cx="15" cy="7" r="2"></circle><circle cx="9" cy="17" r="2"></circle></svg></span>Settings</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1240}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

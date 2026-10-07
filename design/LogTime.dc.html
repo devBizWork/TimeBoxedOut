@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Log time sheet</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#15111F}
+a{color:#4B2E83;text-decoration:none}a:hover{color:#35206A}
+button,input,textarea{font-family:inherit}
+button{cursor:pointer}
+textarea::placeholder{color:#6E6680}
+</style>
+</helmet>
+<div style="width: 390px; height: 900px; position: relative; overflow: hidden; background: #15111F; color: #15111F; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums">
+
+<div aria-hidden="true" style="position: absolute; left: 14px; right: 14px; top: 40px; height: 40px; border-radius: 22px 22px 0 0; background: #4A4458"></div>
+
+<section role="dialog" aria-modal="true" aria-labelledby="log-title" style="position: absolute; left: 0; right: 0; top: 52px; bottom: 0; border-radius: 28px 28px 0 0; background: #F5F2FA; padding: 0 16px 34px 16px; display: flex; flex-direction: column; gap: 12px">
+<div aria-hidden="true" style="align-self: center; width: 36px; height: 5px; border-radius: 3px; background: #CFC6E0; margin-top: 8px"></div>
+
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: -4px">
+<h2 id="log-title" style="margin: 0 0 0 4px; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-size: 24px; font-weight: 700">Log time</h2>
+<a href="Main.dc.html" aria-label="Close" style="width: 44px; height: 44px; border-radius: 22px; background: #ECE8F4; color: #15111F; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path></svg></a>
+</div>
+
+<div style="padding: 12px 14px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E6E0F0; display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="width: 42px; height: 42px; border-radius: 12px; background: #E4DFFC; flex-shrink: 0"></span>
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 700">Deep work</span><span style="font-size: 13px; font-weight: 500; color: #5E5670">Planned 9:00 – 10:30 am · 90 min</span></span>
+</div>
+
+<div style="padding: 16px 16px 16px 18px; border-radius: 24px; background: #4B2E83; color: #FFFFFF; display: flex; align-items: center; gap: 12px">
+<div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+<span style="display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; color: #E2DBFB"><span style="width: 7px; height: 7px; border-radius: 4px; background: #E2DBFB"></span>TIMER RUNNING</span>
+<span style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-size: 50px; font-weight: 700; line-height: 1; letter-spacing: -0.01em">57:12</span>
+<span style="font-size: 13px; font-weight: 500; color: #E2DBFB">Started 9:15 am · 15 min after plan</span>
+</div>
+<button type="button" aria-label="Stop timer" style="width: 68px; height: 68px; border: 0; border-radius: 34px; background: #FFFFFF; color: #4B2E83; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 0; font-size: 11px; font-weight: 800; flex-shrink: 0"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5" fill="currentColor"></rect></svg>STOP</button>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<button type="button" style="min-height: 76px; padding: 12px 14px; border-radius: 20px; border: 1px solid #E6E0F0; background: #FFFFFF; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left; color: #15111F">
+<span aria-hidden="true" style="width: 28px; height: 28px; border-radius: 14px; background: #4B2E83; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span style="display: flex; flex-direction: column; gap: 1px"><span style="font-size: 14.5px; font-weight: 700">Done as planned</span><span style="font-size: 12px; font-weight: 500; color: #5E5670">Copies 9:00 – 10:30</span></span>
+</button>
+<button type="button" style="min-height: 76px; padding: 12px 14px; border-radius: 20px; border: 1px solid #E6E0F0; background: #FFFFFF; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left; color: #15111F">
+<span aria-hidden="true" style="width: 28px; height: 28px; border-radius: 14px; background: #ECE8F4; color: #5E5670; display: flex; align-items: center; justify-content: center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M6.5 6.5l11 11"></path></svg></span>
+<span style="display: flex; flex-direction: column; gap: 1px"><span style="font-size: 14.5px; font-weight: 700">Skipped</span><span style="font-size: 12px; font-weight: 500; color: #5E5670">Counts as 0%</span></span>
+</button>
+</div>
+
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 700; color: #5E5670; margin: 2px 0">
+<span style="flex: 1; height: 1px; background: #E6E0F0"></span>or enter times<span style="flex: 1; height: 1px; background: #E6E0F0"></span>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<button type="button" aria-label="Actual start, 9:15 am" style="height: 58px; border: 1px solid #E6E0F0; border-radius: 16px; background: #FFFFFF; padding: 0 14px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; text-align: left; color: #15111F"><span style="font-size: 12px; font-weight: 600; color: #5E5670">Started</span><span style="font-size: 17px; font-weight: 700">9:15 am</span></button>
+<button type="button" aria-label="Actual end, 10:12 am" style="height: 58px; border: 2px solid #4B2E83; border-radius: 16px; background: #FFFFFF; padding: 0 13px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; text-align: left; color: #15111F"><span style="font-size: 12px; font-weight: 600; color: #5E5670">Ended</span><span style="font-size: 17px; font-weight: 700">10:12 am</span></button>
+</div>
+
+<div style="padding: 0 4px; display: flex; flex-direction: column; gap: 6px">
+<div aria-hidden="true" style="height: 6px; border-radius: 3px; background: repeating-linear-gradient(135deg, #D6CEE6 0 4px, #F7F4FB 4px 8px)"><div style="width: 63%; height: 6px; border-radius: 3px; background: #4B2E83"></div></div>
+<div style="display: flex; justify-content: space-between; gap: 8px; font-size: 12.5px; font-weight: 600"><span><span style="font-weight: 800">57 of 90 min</span> <span style="color: #5E5670">· partial</span></span><span style="color: #5E5670">Task score 90%</span></div>
+</div>
+
+<div style="padding: 12px 16px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E6E0F0; display: flex; flex-direction: column; gap: 4px">
+<label for="log-note" style="font-size: 12px; font-weight: 700; color: #5E5670">Note</label>
+<textarea id="log-note" rows="2" placeholder="Optional, like what got in the way" style="border: 0; padding: 0; height: 46px; resize: none; background: transparent; font-size: 15px; font-weight: 500; line-height: 1.45; color: #15111F; outline: none"></textarea>
+</div>
+
+<a href="Main.dc.html" style="margin-top: auto; height: 54px; border-radius: 27px; background: #4B2E83; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700">Save log</a>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
