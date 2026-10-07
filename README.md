@@ -5,7 +5,7 @@ Block out the day, follow the blocks, log what happened, review and adjust. No a
 server: everything lives in the phone's database, and backups are files saved to the Files app.
 
 This repo holds the **backend** (data, scoring, now line, chimes, backup) plus the PWA and GitHub Pages
-plumbing. `src/App.jsx` is only a harness that exercises the backend; the real screens (the Lilac Dusk
+plumbing. The design source files are in [`design/`](design/README.md). `src/App.jsx` is only a harness that exercises the backend; the real screens (the Lilac Dusk
 design) plug into the hooks in `src/react/hooks.jsx` and the API in `src/backend/index.js`.
 
 ## Stack

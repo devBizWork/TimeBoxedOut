@@ -7,7 +7,7 @@ export const DB_NAME = 'routine-tracker';
 /**
  * Block colours (hex from the design) and the category each one stands for.
  * The colour id is what is stored; `category` is the label shown in the picker.
- * (Category-to-colour pairing is inferred from the design's sample blocks; change it here only.)
+ * Pairing matches the Lilac Dusk category chips in design/OptionB.dc.html.
  */
 export const COLORS = [
   { id: 'mint', label: 'Mint', category: 'Movement', hex: '#D6F2E5' },
