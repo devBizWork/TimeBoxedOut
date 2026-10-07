@@ -1,0 +1,69 @@
+/* Routine Tracker — "Lilac Dusk" design tokens (Option W, black titles) */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* Surfaces */
+  --color-bg: #F5F2FA;            /* app background */
+  --color-surface: #FFFFFF;       /* cards, tab bar, sheets' inner cards */
+  --color-surface-muted: #ECE8F4; /* segmented controls, skipped blocks, icon buttons */
+  --color-border: #E6E0F0;
+  --color-border-strong: #D6CEE6;
+  --color-divider: #EFEBF6;
+  --color-scrim: #15111F;         /* behind sheets */
+
+  /* Text: one ink for every event title */
+  --color-ink: #15111F;
+  --color-ink-muted: #5E5670;     /* times, labels, secondary text */
+  --color-ink-soft: #3D3550;
+
+  /* Brand */
+  --color-primary: #4B2E83;       /* plum: buttons, checks, progress, active tab, stop button */
+  --color-primary-pressed: #35206A;
+  --color-on-primary: #FFFFFF;
+  --color-accent-soft: #E9E4FD;   /* selected option backgrounds */
+  --color-accent-tint: #E2DBFB;   /* active tab pill, today marker, small badges */
+  --color-periwinkle: #9C8CF5;    /* charts: Logged score */
+  --color-mint: #A8E6CF;
+
+  /* "Now" card */
+  --color-now-bg: #ECE7FD;
+  --color-now-border: #D8CFF7;
+
+  /* Scores */
+  --color-followed: #4B2E83;
+  --color-missed: #F08A5D;
+  --color-missed-text: #B4501C;   /* text/tags for off-plan, 60 min late, etc. */
+  --color-missed-soft: #FBE3D2;
+  --pattern-unknown: repeating-linear-gradient(135deg, #D6CEE6 0 4px, #F7F4FB 4px 8px);
+  --color-unknown-dash: #988DAE;  /* dashed outline on unknown blocks */
+
+  /* Block (category) fills — titles on these are always --color-ink */
+  --cat-movement: #D6F2E5;  /* mint */
+  --cat-focus: #E4DFFC;     /* lilac */
+  --cat-admin: #FAF0C6;     /* butter */
+  --cat-meetings: #F8DCEA;  /* pink */
+  --cat-planning: #DCEBF8;  /* sky */
+  --cat-personal: #FCE3D5;  /* peach */
+
+  /* Type */
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif; /* weight 700, tracking -0.03em */
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --text-screen-title: 34px;
+  --text-section-title: 22px;
+  --text-body: 15px;
+  --text-meta: 12.5px;
+  --text-label-caps: 11px;   /* uppercase, 800, letter-spacing 0.07em */
+
+  /* Shape & spacing */
+  --radius-card: 22px;
+  --radius-block: 14px;      /* 12px for 30-min blocks */
+  --radius-sheet: 28px;
+  --radius-pill: 999px;
+  --space-gutter: 16px;
+  --tap-min: 44px;
+
+  /* Timeline */
+  --timeline-px-per-hour: 80px;
+  --timeline-gutter: 46px;   /* hour labels */
+  --actual-bar-width: 6px;   /* "actual time" lane left of each block */
+}
